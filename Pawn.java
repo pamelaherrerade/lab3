@@ -7,8 +7,8 @@ public class Pawn extends ChessPiece{
     }
 
     // Constructor with parameters: color, column, row
-    public Pawn(String color, char column, int row){
-        super(PieceType.PAWN.name(), color, column, row);
+    public Pawn(String name, String color, char column, int row){
+        super(name, color, column, row);
     }
 
     // Verify move method changed to Pawn specifically

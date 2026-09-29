@@ -32,8 +32,8 @@ public class Main{
 
             while (!validInput) {
                 try {
-                    System.out.print("Enter piece information: " + (i + 1) + ": ");
-                    System.out.print("Example: QUEEN, WHITE, A, 1");
+                    System.out.println("Enter piece information: " + (i + 1) + ": ");
+                    System.out.println("Example: QUEEN, WHITE, A, 1");
                     
                     String pieceInfo = input.nextLine();
                     String[] pieceInfoParts = pieceInfo.split(",");
@@ -60,33 +60,32 @@ public class Main{
 
                     // Create the correct piece and put it in the array
                     if (pieceType == PieceType.PAWN) {
-
-                        pieces[i] = new Pawn(color, column, row);
+                        pieces[i] = new Pawn(pieceName, color, column, row);
                     }
 
                     else if (pieceType == PieceType.ROOK) {
 
-                        pieces[i] = new Rook(color, column, row);
+                        pieces[i] = new Rook(pieceName, color, column, row);
                     }
 
                     else if (pieceType == PieceType.KNIGHT) {
 
-                        pieces[i] = new Knight(color, column, row);
+                        pieces[i] = new Knight(pieceName, color, column, row);
                     }
 
                     else if (pieceType == PieceType.BISHOP) {
 
-                        pieces[i] = new Bishop(color, column, row);
+                        pieces[i] = new Bishop(pieceName, color, column, row);
                     }
 
                     else if (pieceType == PieceType.QUEEN) {
 
-                        pieces[i] = new Queen(color, column, row);
+                        pieces[i] = new Queen(pieceName, color, column, row);
                     }
 
                     else if (pieceType == PieceType.KING) {
 
-                        pieces[i] = new King(color, column, row);
+                        pieces[i] = new King(pieceName, color, column, row);
                     }
                     
                     // Mark this piece as already used

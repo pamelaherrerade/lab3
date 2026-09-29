@@ -11,8 +11,8 @@ public class Knight extends ChessPiece{
     public Knight(){
         super(PieceType.KNIGHT.name(),"White",'A',1);
     }
-    public Knight(String color,char col,int row){
-        super(PieceType.KNIGHT.name(),color,col,row);
+    public Knight(String name, String color,char col,int row){
+        super(name,color,col,row);
     }
 
     @Override
