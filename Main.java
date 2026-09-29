@@ -1,3 +1,13 @@
+/*
+Author(s): Andres Iglesias, Diana Islava Rauda, Pamela Herrera
+Lab 3 - Chess Pieces implementing Hierarchy and Polymorphism. Program will  instantiate six unique chess pieces, validate positions to verify they are within chessboard limits, and executes move verification in a polymorphic way across pieces.
+Changelog:
+09/23: Created GitHub repository with readme file and assigned tasks, including attributes and methods signatures, output format requirements, and git workflow.
+09/25: Created ChessPiece, PieceType, Chessboard and Pawn files.
+09/26: Created Knight, Bishop, Rook, Queen, and King files.
+09:26: Created Main file.
+ */
+
 import java.util.Scanner;
 
 public class Main{
